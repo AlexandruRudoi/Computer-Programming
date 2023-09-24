@@ -1,42 +1,78 @@
-# Computer-Programming
+# Laboratory work #3
 
-This repository is dedicated to a university project in the field of computer programming. The project aims to demonstrate the implementation of various programming concepts and techniques while solving practical computational problems. It serves as a platform for students to explore and apply their knowledge in the realm of programming.
+This repository focuses on Two-Dimensional Array Operations and Processing in C. It includes functionalities to create, sort, and convert matrices into spiral forms.
 
-### Project Overview
+## Table of Contents
 
-- **Purpose:** The primary purpose of this project is to enhance the understanding of fundamental programming concepts and their real-world applications.
+- [Introduction](#introduction)
+- [Matrix Manipulation](#matrix-manipulation)
+  - [Generate Matrix](#generate-matrix)
+  - [Create Matrix](#create-matrix)
+  - [Print Matrix](#print-matrix)
+- [Sorting and Transformation](#sorting-and-transformation)
+  - [Bubble Sort](#bubble-sort)
+  - [Matrix to Vector](#matrix-to-vector)
+  - [Vector to Spiral Matrix](#vector-to-spiral-matrix)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-- **Scope:** The project encompasses a diverse range of programming challenges, including sorting algorithms, numerical function evaluation, data structures, and more.
+## Introduction
 
-- **Learning Objectives:** Through this project, students can achieve the following learning objectives:
-  - Gain hands-on experience with different programming languages and paradigms.
-  - Develop problem-solving skills by tackling a variety of computational tasks.
-  - Explore various algorithms and data structures to address specific challenges.
-  - Understand best practices in coding, documentation, and version control.
-  - Collaborate with peers and learn from shared experiences.
+In this lab, I delve into matrix operations and transformations. This repository provides C implementations to create matrices, sort them, and convert sorted vectors into spiral matrices.
 
-- **Branches:** The repository is organized into branches, each corresponding to a specific lab assignment or project milestone.
+## Matrix Manipulation
 
-- **Contribution:** Contributions to this repository are encouraged. Anyone can collaborate on improving existing code, adding new features, or sharing their insights on programming concepts.
+### Generate Matrix
 
-### How to Use
+The `generateMatrix` function generates a random matrix of specified dimensions.
 
-To make the most of this repository:
+### Create Matrix
 
-1. **Clone the Repository:** Clone this repository to your local machine to access the project assignments and code samples.
+The `createMatrix` function allows users to manually input matrix elements or generate a matrix randomly.
 
-2. **Select the Branch:** Choose the branch that corresponds to your current lab assignment or project task. Each branch may focus on a different aspect of computer programming.
+### Print Matrix
 
-3. **Follow the Instructions:** Review the README and code provided in the selected branch to understand the task and its requirements.
+The `printMatrix` function displays the contents of a matrix.
 
-4. **Contribute:** If you have improvements, suggestions, or solutions to share, feel free to contribute by opening a pull request. Your contributions can benefit and enhance the overall learning experience.
+## Sorting and Transformation
 
-5. **Enjoy Learning:** This project is an opportunity to enjoy the journey of learning and mastering the art of computer programming.
+### Bubble Sort
 
-Happy coding!
+The `bubbleSort` function efficiently sorts an integer array using the bubble sort algorithm.
 
-## Branches
+### Matrix to Vector
 
-- [Lab-1](https://github.com/AlexandruRudoi/Computer-Programming/tree/Lab-1)
-- [Lab-2](https://github.com/AlexandruRudoi/Computer-Programming/tree/Lab-2)
-- Soon...
+The `MatrixToVector` function converts a matrix into a one-dimensional integer array.
+
+### Vector to Spiral Matrix
+
+The `ToSpiral` function converts a sorted integer array back into a spiral matrix.
+
+## Usage
+
+1. **Compile the Code:** Compile the C code using your preferred C compiler.
+
+   ```bash
+   gcc -o main.c
+   ```
+
+2. **Run the Program:** Execute the program.
+
+   ```bash
+   ./a.exe
+   ```
+
+3. **Follow On-Screen Prompts:** Enter the number of rows and columns for the matrix, choose to enter the matrix manually or generate it randomly, and provide the matrix elements accordingly.
+
+4. **Review Results:** The program will print the generated or entered matrix, the sorted matrix, and the time taken to execute the program.
+
+## Contributing
+
+Contributions to this repository are welcome! If you have suggestions for improvements or additional features related to matrix manipulation or sorting algorithms, please consider opening a pull request. Your contributions can enhance the learning experience for fellow students.
+
+## License
+
+This project is licensed under the TUM License.
+
+---
