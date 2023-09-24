@@ -37,6 +37,6 @@ Happy coding!
 
 ## Branches
 
-- [Lab-1](https://github.com/AlexandruRudoi/Computer-Programming/tree/Lab-1): Initial lab assignment focusing on numerical function evaluation and various looping techniques.
-- [Lab-2](https://github.com/AlexandruRudoi/Computer-Programming/tree/Lab-2): Additional lab assignment that may cover different programming concepts or challenges.
-- (Add more branches and descriptions as needed)
+- [Lab-1](https://github.com/AlexandruRudoi/Computer-Programming/tree/Lab-1)
+- [Lab-2](https://github.com/AlexandruRudoi/Computer-Programming/tree/Lab-2)
+- Soon...
