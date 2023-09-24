@@ -1,7 +1,5 @@
 # Computer-Programming
 
-## About
-
 This repository is dedicated to a university project in the field of computer programming. The project aims to demonstrate the implementation of various programming concepts and techniques while solving practical computational problems. It serves as a platform for students to explore and apply their knowledge in the realm of programming.
 
 ### Project Overview
