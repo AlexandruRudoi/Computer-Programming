@@ -16,9 +16,6 @@ void printArray(int arr[], int n);
 int main(){
     clock_t start, end;
     double cpu_time_used;
-    start = clock();
-    
-    // Time start
     int n, i;
 
     // Read in the number of elements
@@ -34,24 +31,51 @@ int main(){
 
     // Print the sorted array using each sorting algorithm
     // Bubble Sort
+    start = clock();
+    
+    // Time start
     copyArray(arr, arr2, n);
     printf("\nSorted array using Bubble Sort algorithm: \n");
     bubbleSort(arr2, n);
     printArray(arr2, n);
     
+    // Time end
+    end = clock();
+    cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
+    printf("Array was sorted in %f seconds \n", cpu_time_used);
+    
     // Selection Sort
+    start = clock();
+    
+    // Time start
     copyArray(arr, arr2, n);
     printf("\nSorted array using Selection Sort algorithm: \n");
     selectionSort(arr2, n);
     printArray(arr2, n);
+    
+    // Time end
+    end = clock();
+    cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
+    printf("Array was sorted in %f seconds \n", cpu_time_used);
 
     // Insertion Sort
+    start = clock();
+    
+    // Time start
     copyArray(arr, arr2, n);
     printf("\nSorted array using Insertion Sort algorithm: \n");
     insertionSort(arr2, n);
     printArray(arr2, n);
+    
+    // Time end
+    end = clock();
+    cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
+    printf("Array was sorted in %f seconds \n", cpu_time_used);
 
     // Quick Sort
+    start = clock();
+    
+    // Time start
     copyArray(arr, arr2, n);
     printf("\nSorted array using Quick Sort algorithm: \n");
     quickSort(arr2, 0, n-1);
@@ -60,7 +84,7 @@ int main(){
     // Time end
     end = clock();
     cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
-    printf("\nProgram took %f seconds to execute \n", cpu_time_used);
+    printf("Array was sorted in %f seconds \n", cpu_time_used);
 
     return 0;
 }
