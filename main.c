@@ -307,20 +307,20 @@ void menu(char **buffer){
     char choice;
     
     clearScreen();
-printf("Text Editor\n");
-printf("-----------\n");
-printf(GREEN_TEXT "1. Print Buffer\n" RESET_COLOR);
-printf(GREEN_TEXT "2. Enter Text\n" RESET_COLOR);
-printf(GREEN_TEXT "3. Search for a Word\n" RESET_COLOR);
-printf(GREEN_TEXT "4. Replace a Word\n" RESET_COLOR);
-printf(GREEN_TEXT "5. Delete Buffer\n" RESET_COLOR);
-printf(GREEN_TEXT "6. Save to File\n" RESET_COLOR);
-printf(GREEN_TEXT "7. Load from File\n" RESET_COLOR);
-printf(RED_TEXT "8. Exit\n" RESET_COLOR);
+    printf("Text Editor\n");
+    printf("-----------\n");
+    printf(GREEN_TEXT "1. Print Buffer\n" RESET_COLOR);
+    printf(GREEN_TEXT "2. Enter Text\n" RESET_COLOR);
+    printf(GREEN_TEXT "3. Search for a Word\n" RESET_COLOR);
+    printf(GREEN_TEXT "4. Replace a Word\n" RESET_COLOR);
+    printf(GREEN_TEXT "5. Delete Buffer\n" RESET_COLOR);
+    printf(GREEN_TEXT "6. Save to File\n" RESET_COLOR);
+    printf(GREEN_TEXT "7. Load from File\n" RESET_COLOR);
+    printf(RED_TEXT "8. Exit\n" RESET_COLOR);
 
-printf("\n------------------\n");
-printf("Enter your choice: ");
-scanf(" %c", &choice);
+    printf("\n------------------\n");
+    printf("Enter your choice: ");
+    scanf(" %c", &choice);
     
     clearInputBuffer(); // Clear any remaining characters in the input buffer
 
