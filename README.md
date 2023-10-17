@@ -1,42 +1,83 @@
-# Computer-Programming
+# Laboratory work #4
 
-This repository is dedicated to a university project in the field of computer programming. The project aims to demonstrate the implementation of various programming concepts and techniques while solving practical computational problems. It serves as a platform for students to explore and apply their knowledge in the realm of programming.
+This is a simple text editor implemented in C. The text editor provides basic text manipulation functions, such as entering text, printing the buffer, searching for a word, replacing a word, deleting the buffer, saving text to a file, and loading text from a file. It also includes a TRY-CATCH mechanism for handling exceptions.
 
-### Project Overview
+## Table of Contents
 
-- **Purpose:** The primary purpose of this project is to enhance the understanding of fundamental programming concepts and their real-world applications.
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Exception Handling](#exception-handling)
+- [Contributing](#contributing)
+- [License](#license)
 
-- **Scope:** The project encompasses a diverse range of programming challenges, including sorting algorithms, numerical function evaluation, data structures, and more.
+## Introduction
 
-- **Learning Objectives:** Through this project, students can achieve the following learning objectives:
-  - Gain hands-on experience with different programming languages and paradigms.
-  - Develop problem-solving skills by tackling a variety of computational tasks.
-  - Explore various algorithms and data structures to address specific challenges.
-  - Understand best practices in coding, documentation, and version control.
-  - Collaborate with peers and learn from shared experiences.
+This text editor is a command-line tool that allows you to work with text, perform various operations on the text buffer, and save or load text from a file. It also includes a basic exception handling mechanism for robust operation.
 
-- **Branches:** The repository is organized into branches, each corresponding to a specific lab assignment or project milestone.
+## Features
 
-- **Contribution:** Contributions to this repository are encouraged. Anyone can collaborate on improving existing code, adding new features, or sharing their insights on programming concepts.
+### 1. Print Buffer
 
-### How to Use
+Prints the content of the text buffer if it is not empty.
 
-To make the most of this repository:
+### 2. Enter Text
 
-1. **Clone the Repository:** Clone this repository to your local machine to access the project assignments and code samples.
+Allows you to enter text into the text buffer interactively.
 
-2. **Select the Branch:** Choose the branch that corresponds to your current lab assignment or project task. Each branch may focus on a different aspect of computer programming.
+### 3. Search for a Word
 
-3. **Follow the Instructions:** Review the README and code provided in the selected branch to understand the task and its requirements.
+Searches for a specific word in the text buffer and reports the number of occurrences.
 
-4. **Contribute:** If you have improvements, suggestions, or solutions to share, feel free to contribute by opening a pull request. Your contributions can benefit and enhance the overall learning experience.
+### 4. Replace a Word
 
-5. **Enjoy Learning:** This project is an opportunity to enjoy the journey of learning and mastering the art of computer programming.
+Replaces a specific word in the text buffer with another word.
 
-Happy coding!
+### 5. Delete Buffer
 
-## Branches
+Deletes the entire text buffer.
 
-- [Lab-1](https://github.com/AlexandruRudoi/Computer-Programming/tree/Lab-1)
-- [Lab-2](https://github.com/AlexandruRudoi/Computer-Programming/tree/Lab-2)
-- Soon...
+### 6. Save to File
+
+Saves the content of the text buffer to a file named "text.txt."
+
+### 7. Load from File
+
+Loads text from a file named "text.txt" into the text buffer.
+
+### 8. Exit
+
+Exits the text editor.
+
+## Installation
+
+No special installation is required for this text editor. You can compile and run it using a C compiler. The provided source code should work on most systems.
+
+## Usage
+
+1. **Compile the Code:** Compile the C code using your preferred C compiler.
+
+   ```bash
+   gcc -o text_editor.c
+   ```
+
+2. **Run the Program:** Execute the program.
+
+   ```bash
+   ./a.out
+   ```
+
+3. **Use the Menu:** Follow the on-screen menu to select and perform text manipulation operations.
+
+## Exception Handling
+
+This text editor includes a basic TRY-CATCH mechanism for handling exceptions. For example, when saving the buffer to a file, it checks if the buffer is empty and throws an exception if it is. The TRY-CATCH mechanism ensures that the program handles exceptions gracefully.
+
+## Contributing
+
+Contributions to this text editor are welcome! If you have suggestions for improvements or additional features, please consider opening a pull request. Your contributions can enhance the functionality and user experience of the text editor.
+
+## License
+
+This project is licensed under the TUM License.
