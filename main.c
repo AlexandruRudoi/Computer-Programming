@@ -350,7 +350,7 @@ scanf(" %c", &choice);
 
                 char word[100];
                 printf("Enter the word to be searched: ");
-                fgets(word, sizeof(word), stdin);
+                scanf("%s", word);
                 word[strcspn(word, "\n")] = '\0'; // Remove the newline character
                 
                 int count = searchWord(*buffer, word);
