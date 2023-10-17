@@ -152,7 +152,6 @@ int enterText(char **text) {
     return 0;
 }
 
-
 // Search for a Word
 int searchWord(const char *text, const char *word) {
     if (text == NULL || word == NULL) {
