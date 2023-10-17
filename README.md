@@ -59,7 +59,7 @@ No special installation is required for this text editor. You can compile and ru
 1. **Compile the Code:** Compile the C code using your preferred C compiler.
 
    ```bash
-   gcc -o text_editor.c
+   gcc -o main.c
    ```
 
 2. **Run the Program:** Execute the program.
