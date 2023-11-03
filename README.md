@@ -1,82 +1,83 @@
 # Laboratory work #5
 
-This is a simple text editor implemented in C. The text editor provides basic text manipulation functions, such as entering text, printing the buffer, searching for a word, replacing a word, deleting the buffer, saving text to a file, and loading text from a file. It also includes a TRY-CATCH mechanism for handling exceptions.
+This C program implements a stack data structure with a menu-driven interface. It allows you to interact with the stack by selecting various operations, such as pushing data onto the stack, popping data from the stack, peeking at the top element, and more. The program also provides color-coded text output for a user-friendly experience.
 
 ## Table of Contents
 
 - [Introduction](#introduction)
 - [Features](#features)
-- [Installation](#installation)
 - [Usage](#usage)
-- [Exception Handling](#exception-handling)
+- [Data Types](#data-types)
+- [Compilation](#compilation)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## Introduction
 
-This text editor is a command-line tool that allows you to work with text, perform various operations on the text buffer, and save or load text from a file. It also includes a basic exception handling mechanism for robust operation.
+This program introduces you to the stack data structure, which follows the Last-In, First-Out (LIFO) principle. It allows you to perform various stack operations through a menu-driven interface, making it easy to understand and use.
 
 ## Features
 
-### 1. Print Buffer
+### 1. Push Data
 
-Prints the content of the text buffer if it is not empty.
+Allows you to push data of different types (integers, characters, floats, or user-defined structures) onto the stack.
 
-### 2. Enter Text
+### 2. Pop Data
 
-Allows you to enter text into the text buffer interactively.
+Pops and displays data from the top of the stack.
 
-### 3. Search for a Word
+### 3. Peek at Data
 
-Searches for a specific word in the text buffer and reports the number of occurrences.
+Displays the data at the top of the stack without removing it.
 
-### 4. Replace a Word
+### 4. Update Maximum Stack Size
 
-Replaces a specific word in the text buffer with another word.
+Enables you to change the maximum size of the stack.
 
-### 5. Delete Buffer
+### 5. Check if Stack is Full
 
-Deletes the entire text buffer.
+Checks if the stack is full and provides feedback.
 
-### 6. Save to File
+### 6. Check if Stack is Empty
 
-Saves the content of the text buffer to a file named "text.txt."
+Checks if the stack is empty and provides feedback.
 
-### 7. Load from File
+### 7. Exit
 
-Loads text from a file named "text.txt" into the text buffer.
+Exits the program gracefully.
 
-### 8. Exit
+## Data Types
 
-Exits the text editor.
+The program uses the following data types:
 
-## Installation
-
-No special installation is required for this text editor. You can compile and run it using a C compiler. The provided source code should work on most systems.
+- **Integer (MY_INT):** Represents an integer data type.
+- **Character (MY_CHAR):** Represents a character data type.
+- **Float (MY_FLOAT):** Represents a floating-point data type.
+- **User-Defined Structure (MY_USER_STRUCT):** Represents a user-defined structure containing an integer and a character array.
 
 ## Usage
 
-1. **Compile the Code:** Compile the C code using your preferred C compiler.
+1. **Compilation:** Compile the C code using your preferred C compiler. 
 
    ```bash
-   gcc -o main.c
+   gcc stack_program.c -o stack_program
    ```
 
-2. **Run the Program:** Execute the program.
+2. **Run the Program:** Execute the compiled program.
 
    ```bash
-   ./a.out
+   ./stack_program
    ```
 
-3. **Use the Menu:** Follow the on-screen menu to select and perform text manipulation operations.
+3. **Follow the Menu:** The program will display a menu, and you can select operations by entering the corresponding option number.
 
-## Exception Handling
+## Compilation
 
-This text editor includes a basic TRY-CATCH mechanism for handling exceptions. For example, when saving the buffer to a file, it checks if the buffer is empty and throws an exception if it is. The TRY-CATCH mechanism ensures that the program handles exceptions gracefully.
+No special dependencies are required for compiling and running this program. The provided source code should work on most systems with a C compiler.
 
 ## Contributing
 
-Contributions to this text editor are welcome! If you have suggestions for improvements or additional features, please consider opening a pull request. Your contributions can enhance the functionality and user experience of the text editor.
+Contributions to this program are welcome! If you have suggestions for improvements, additional features, or bug fixes, please consider opening a pull request. Your contributions can enhance the functionality and user experience of the program.
 
 ## License
 
